@@ -45,15 +45,23 @@ function toggleMoreCases(){
   btn.textContent=showing?'Show 3 more':'Show less';
   arr.style.transform=showing?'':'rotate(180deg)';
 }
-// Scroll progress bar + ribbon show/hide + active nav
+// Scroll progress bar + nav hide/show on mobile + active nav
+let lastScrollY=0;
 window.addEventListener('scroll',()=>{
   const st=window.scrollY;
   const dh=document.documentElement.scrollHeight-window.innerHeight;
   document.getElementById('scrollBar').style.width=(st/dh*100)+'%';
 
-  // Show ribbon after hero
-  const heroH=document.getElementById('hero').offsetHeight;
-
+  // On mobile: hide nav on scroll down, reveal on scroll up
+  if(window.innerWidth<=960){
+    const nav=document.querySelector('nav');
+    if(st>lastScrollY&&st>80){
+      nav.classList.add('nav-hidden');
+    } else {
+      nav.classList.remove('nav-hidden');
+    }
+  }
+  lastScrollY=st;
 
   // Highlight active nav section
   const sections=['hero','about','work','skills','thinking','contact'];
