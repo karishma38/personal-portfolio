@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karishma Borkar, Product Manager</title>
+<meta name="description" content="Product Manager specializing in digital acquisition, onboarding, and analytics. Open to PM, APM, and Product Analyst roles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollBar"></div>
+
+<nav>
+  <a href="#hero" class="nav-logo">Karishma Borkar</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#thinking">Thinking</a></li>
+    <li><a href="#contact" class="nav-cta">Say Hello</a></li>
+  </ul>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
+</nav>
+
+<!-- QUICK ACCESS RIBBON -->
+<!-- <div class="qa-ribbon" id="qaRibbon">
+  <span class="qa-ribbon-label">Jump to case study</span>
+  <button class="qa-btn" onclick="openModal('onboarding')"><span class="qa-dot" style="background:#C4501A"></span>Onboarding Redesign</button>
+  <button class="qa-btn" onclick="openModal('dropoff')"><span class="qa-dot" style="background:#27476A"></span>Drop-off Analytics</button>
+  <button class="qa-btn" onclick="openModal('lending')"><span class="qa-dot" style="background:#2A4A3A"></span>Lending Strategy</button>
+  <button class="qa-btn" onclick="openModal('agile')"><span class="qa-dot" style="background:#485A70"></span>Agile Hub</button>
+  <button class="qa-btn" onclick="openModal('dormant')"><span class="qa-dot" style="background:#4A2C6E"></span>Reactivation</button>
+  <button class="qa-btn" onclick="openModal('teardown')"><span class="qa-dot" style="background:#785040"></span>Teardown</button>
+  <button class="qa-btn" onclick="openModal('dashboard')"><span class="qa-dot" style="background:#2A6A4A"></span>Dashboard</button>
+</div> -->
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-eye">Product Manager · Boston, MA</div>
+    <h1 class="hh">I find where<br>users drop off <br>and <em>fix it.</em></h1>
+    <p class="hero-sub">2+ years shipping data driven product decisions at a digital bank with <strong>2.5M users</strong>, plus a year of continued learning, research, and independent projects. Now targeting PM, APM, and Product Analyst roles in the US.</p>
+    <div class="hero-btns">
+      <a href="#work" class="bp">See my work  →</a>
+      <a href="#contact" class="bs">Get in touch</a>
+    </div>
+    <div class="jump-bar">
+      <span class="jump-label">Jump to:</span>
+      <a class="jump-btn" onclick="openModal('agile');return false" href="#"><span class="jdot jd1"></span>Agile Hub</a>
+      <a class="jump-btn" onclick="openModal('onboarding');return false" href="#"><span class="jdot jd2"></span>Onboarding Redesign</a>
+      <a class="jump-btn" onclick="openModal('dropoff');return false" href="#"><span class="jdot jd3"></span>Drop-off Analysis</a>
+      <a class="jump-btn" onclick="openModal('dormant');return false" href="#"><span class="jdot jd4"></span>Reactivation</a>
+      <a class="jump-btn" onclick="openModal('teardown');return false" href="#"><span class="jdot jd5"></span>Product Teardown</a>
+      <a class="jump-btn" onclick="openModal('dashboard');return false" href="#"><span class="jdot jd6"></span>Analytics Dashboard</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hglow"></div>
+    <div class="hwm">Karishma</div>
+    <div class="hero-photo-wrap">
+      <img src="https://media.licdn.com/dms/image/v2/D4D03AQFuSBy4o_8FKA/profile-displayphoto-crop_800_800/B4DZivZThEHYAM-/0/1755289304732?e=1776297600&v=beta&t=0oxu1Nch3V-pK6lHapRzj_BSPawqxTy1dxWx_huhY1g" alt="Karishma Borkar" class="hero-photo">
+    </div>
+    <div class="mgrid">
+      <div class="mc"><div class="mk">Scale</div><div class="mn">2.5<span class="ma">M</span></div><div class="ml">Users impacted through onboarding &amp; acquisition</div></div>
+      <div class="mc"><div class="mk">Speed</div><div class="mn" style="font-size:clamp(1.6rem,2.6vw,2.4rem)">48hr <span class="ma">&#8594;</span> 10min</div><div class="ml">Account opening time via live video verification</div></div>
+      <div class="mc"><div class="mk">Quality</div><div class="mn"><span class="ma">&#8595;</span>22<span class="ma">%</span></div><div class="ml">Repeat signup failures eliminated through analytics</div></div>
+      <div class="mc"><div class="mk">Growth</div><div class="mn"><span class="ma">&#8593;</span>18<span class="ma">%</span></div><div class="ml">Conversion lift via structured A/B experimentation</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="fu">
+    <div class="sl">About Me</div>
+    <div class="analytics-bar fu d2">
+      <div>
+        <div class="ab-title">Built on an analytics foundation</div>
+        <div class="ab-sub">My PM work is grounded in hands-on data: dashboards, funnels, and experimentation. Not just strategy decks.</div>
+      </div>
+      <div class="ab-chips">
+        <span class="ab-chip">Tableau</span>
+        <span class="ab-chip">Adobe Analytics</span>
+        <span class="ab-chip">SQL</span>
+        <span class="ab-chip">Dynatrace</span>
+        <span class="ab-chip">A/B Testing</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="fu d2">
+    <div class="about-intro-text">
+        <h2 class="sh2" style="font-size:clamp(1.6rem,2.5vw,2.4rem);margin-bottom:.85rem">A PM who leads<br>with <em>questions,</em><br>not answers.</h2>
+        <p class="ab">I started as a full stack developer who couldn't stop asking <strong>"but why does the user do that?"</strong> That curiosity pulled me into product management where I spent years inside funnel data, finding the exact moments users gave up.</p>
+        <p class="ab">It was rarely what anyone expected. <strong>Identity verification failures weren't user errors they were API timeouts.</strong> Funding drop offs weren't cold feet they were specific payment processor failures. The data always had an answer. My job was asking the right question first.</p>
+        <div class="vals">
+          <div class="val">Every funnel is a hypothesis, not a given.</div>
+          <div class="val">Ship small, learn fast, measure everything.</div>
+          <div class="val">Support tickets are my favorite research tool.</div>
+        </div>
+        <a href="https://1drv.ms/b/c/42e446e869dc24da/IQAHCeIjpGibQK8EZUvzN-I9AQCNVRYi0vLcnmNdDEZqfdk?e=eQF3WB" class="bp" style="width:fit-content;margin-top:.5rem">Download Resume ↓</a>
+      </div>
+    </div>
+    <div class="analytics-bar fu d2">
+      <div>
+        <div class="ab-title">Built on an analytics foundation</div>
+        <div class="ab-sub">My PM work is grounded in hands-on data: dashboards, funnels, and experimentation. Not just strategy decks.</div>
+      </div>
+      <div class="ab-chips">
+        <span class="ab-chip">Tableau</span>
+        <span class="ab-chip">Adobe Analytics</span>
+        <span class="ab-chip">SQL</span>
+        <span class="ab-chip">Dynatrace</span>
+        <span class="ab-chip">A/B Testing</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="fu d2">
+    <div class="acard">
+      <div class="act">Experience</div>
+      <div class="er"><div class="ed"></div><div><div class="ero">PMO Analyst Co-op</div><div class="eco">Ahold Delhaize USA · Boston, MA</div><div class="eyr">Jul – Dec 2025</div></div></div>
+      <div class="er"><div class="ed"></div><div><div class="ero">Digital Acquisition Manager</div><div class="eco">IDFC First Bank · India</div><div class="eyr">Aug 2023 – Sep 2024</div></div></div>
+      <div class="er"><div class="ed"></div><div><div class="ero">Associate Product Manager</div><div class="eco">IDFC First Bank · India</div><div class="eyr">Jul 2022 – Aug 2023</div></div></div>
+      <div class="er"><div class="ed"></div><div><div class="ero">Full-Stack Developer Intern</div><div class="eco">Being Digital · India</div><div class="eyr">Apr – Sep 2021</div></div></div>
+    </div>
+    <div class="acard">
+      <div class="act">Education</div>
+      <div class="er"><div class="ed"></div><div><div class="ero">MS, Project Management</div><div class="eco">Northeastern University · Boston, MA</div><div class="eyr">Sep 2024 – Jun 2026 (expected)</div></div></div>
+      <div class="er"><div class="ed"></div><div><div class="ero">BE, Information Technology</div><div class="eco">St. Francis Institute of Technology</div><div class="eyr">2019 – 2022</div></div></div>
+      <div class="er"><div class="ed"></div><div><div class="ero">Diploma, Computer Engineering</div><div class="eco">Government Polytechnic College</div><div class="eyr">2016 – 2019</div></div></div>
+    </div>
+    <div class="acard">
+      <div class="act">A few things about me</div>
+      <div class="fgrid">
+        <div class="fc"><strong>2,000+</strong> member PM club Co-President at Northeastern</div>
+        <div class="fc"><strong>200+</strong> students in the PM Bootcamp I designed from scratch</div>
+        <div class="fc">Moved from <strong>India → Boston</strong> in 2024</div>
+        <div class="fc">Writes <strong>SQL queries</strong> on side projects for fun</div>
+      </div>
+    </div>
+  </div>
+  </div><!-- end about-inner -->
+</section>
+
+<!-- WORK -->
+
+<section id="work">
+  <div class="sl">Case Studies</div>
+  <h2 class="sh2 fu">Work that moved<br><em>real numbers.</em></h2>
+  <p class="wi fu d1">Every project started with a metric that wasn't moving and a dataset that held the answer. Click any card to read the full story: problem, process, artifacts, and what I'd do differently.</p>
+  <div id="visibleCases">
+  <div class="cgrid">
+
+    <a class="cc lg fu" onclick="openModal('agile');return false" href="#">
+      <div class="cct bg1"><div class="cpat"></div><div class="cimp">−20%</div><div class="cnum">01 / Agile Lifecycle Hub</div></div>
+      <div class="ccb">
+        <div class="ctag">Internal Product · PMO · Agile Transformation</div>
+        <div class="ctit">Agile at scale: the delivery system 10 engineering squads actually adopted</div>
+        <div class="cdesc">At Ahold Delhaize, every squad had invented its own version of "done." I built the internal product that standardized it, reducing sprint spillovers by 20% in one quarter.</div>
+        <div class="cfoot"><div class="pills"><span class="pill">Internal Product</span><span class="pill">Jira</span><span class="pill">Confluence</span></div><div class="carr">→</div></div>
+      </div>
+    </a>
+
+    <a class="cc hf fu d1" onclick="openModal('onboarding');return false" href="#">
+      <div class="cct bg2"><div class="cpat"></div><div class="cimp">48h→10m</div><div class="cnum">02 / Account Opening Redesign</div></div>
+      <div class="ccb">
+        <div class="ctag">Product Launch · Onboarding · Digital Banking</div>
+        <div class="ctit">From 48 hours to 10 minutes: rebuilding digital account opening for 2.5M users</div>
+        <div class="cdesc">When a legacy onboarding process met smartphone-first users, 60% never reached an active account. I owned the end to end redesign. I tracked the failure to live video verification launch and rollout.</div>
+        <div class="cfoot"><div class="pills"><span class="pill">PRD</span><span class="pill">Video Verification</span><span class="pill">Funnel Analysis</span><span class="pill">A/B Test</span></div><div class="carr">→</div></div>
+      </div>
+    </a>
+
+    <a class="cc sm fu d2" onclick="openModal('dropoff');return false" href="#">
+      <div class="cct bg3"><div class="cpat"></div><div class="cimp">−22%</div><div class="cnum">03 / Drop-off Detective</div></div>
+      <div class="ccb">
+        <div class="ctag">Analytics · Behavioral Segmentation · Remarketing</div>
+        <div class="ctit">The drop off detective: cutting repeat signup failures by 22%</div>
+        <div class="cdesc">Users weren't failing randomly. Third-party API failures and specific payment processor issues were the culprits. Segmentation revealed it. Targeted remarketing fixed it.</div>
+        <div class="cfoot"><div class="pills"><span class="pill">SQL</span><span class="pill">Adobe Analytics</span><span class="pill">Dynatrace</span></div><div class="carr">→</div></div>
+      </div>
+    </a>
+
+  </div><!-- end visible cgrid -->
+  </div><!-- end visibleCases -->
+
+  <div style="text-align:center;margin:1.5rem 0 0">
+    <button id="showMoreBtn" onclick="toggleMoreCases()" style="background:transparent;border:1.5px solid var(--border);border-radius:3rem;padding:.7rem 1.8rem;font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.02em;color:var(--ink2);cursor:pointer;transition:.2s;display:inline-flex;align-items:center;gap:.5rem">
+      <span id="showMoreLabel">Show 3 more</span> <span id="showMoreArrow" style="transition:transform .3s">↓</span>
+    </button>
+  </div>
+
+  <div id="moreCases" style="display:none">
+  <div class="cgrid" style="margin-top:1.5rem">
+    <a class="cc th fu" onclick="openModal('dormant');return false" href="#">
+      <div class="cct bg4"><div class="cpat"></div><div class="cimp">+10%</div><div class="cnum">04 / Dormant Reactivation</div></div>
+      <div class="ccb">
+        <div class="ctag">Growth · Lifecycle Marketing · Segmentation</div>
+        <div class="ctit">Waking the dormant: reactivating 10% of inactive accounts through behavioral signals</div>
+        <div class="cdesc">Built a behavioral scoring model to predict which dormant users were actually win-backable. I designed segment-specific campaigns to bring them back.</div>
+        <div class="cfoot"><div class="pills"><span class="pill">Lifecycle</span><span class="pill">Segmentation</span><span class="pill">SEO</span></div><div class="carr">→</div></div>
+      </div>
+    </a>
+
+    <a class="cc th fu d1" onclick="openModal('teardown');return false" href="#">
+      <div class="cct bg5"><div class="cpat"></div><div class="cimp">Teardown</div><div class="cnum">05 / Product Teardown</div></div>
+      <div class="ccb">
+        <div class="ctag">Product Thinking · US Market · Competitive Analysis</div>
+        <div class="ctit">Chime vs. what I built: a 5-screen account opening teardown</div>
+        <div class="cdesc">After shipping a live video verification flow for 2.5M users, I stress-tested my thinking against Chime's onboarding. What they nail. What I'd change if I were their PM tomorrow.</div>
+        <div class="cfoot"><div class="pills"><span class="pill">UX Analysis</span><span class="pill">US Market</span></div><div class="carr">→</div></div>
+      </div>
+    </a>
+
+    <a class="cc th fu d2" onclick="openModal('dashboard');return false" href="#">
+      <div class="cct bg6"><div class="cpat"></div><div class="cimp">70% faster</div><div class="cnum">06 / Analytics System</div></div>
+      <div class="ccb">
+        <div class="ctag">Data Product · Tableau · Real-time Alerting</div>
+        <div class="ctit">Seeing problems before users report them: a real time activation metrics system</div>
+        <div class="cdesc">Built automated Tableau dashboards and alerting systems that cut issue detection time by 70%, changing how the team responded to incidents before support tickets spiked.</div>
+        <div class="cfoot"><div class="pills"><span class="pill">SQL</span><span class="pill">Tableau</span><span class="pill">Adobe Analytics</span></div><div class="carr">→</div></div>
+      </div>
+    </a>
+
+  </div><!-- end moreCases cgrid -->
+  </div><!-- end moreCases -->
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sl">Skills & Craft</div>
+  <h2 class="sh2 fu">The full stack of<br><em>how I work.</em></h2>
+  <div class="sgrid">
+    <div class="sg fu d1"><div class="sgt">Discovery</div><div class="skl"><div class="sk"><div class="skd"></div>User Research & Interviews</div><div class="sk"><div class="skd"></div>Funnel & Drop-off Analysis</div><div class="sk"><div class="skd"></div>Behavioral Segmentation</div><div class="sk"><div class="skd"></div>Competitive Analysis</div><div class="sk"><div class="skd"></div>Customer Journey Mapping</div></div></div>
+    <div class="sg fu d2"><div class="sgt">Execution</div><div class="skl"><div class="sk"><div class="skd"></div>PRDs, BRDs & User Stories</div><div class="sk"><div class="skd"></div>Roadmapping & Backlog Mgmt</div><div class="sk"><div class="skd"></div>Agile / Scrum Ceremonies</div><div class="sk"><div class="skd"></div>Sprint & Release Planning</div><div class="sk"><div class="skd"></div>Go to Market Strategy</div></div></div>
+    <div class="sg fu d3"><div class="sgt">Analytics & Data</div><div class="skl"><div class="sk"><div class="skd"></div>A/B Testing & Experimentation</div><div class="sk"><div class="skd"></div>Cohort & Funnel Analysis</div><div class="sk"><div class="skd"></div>KPI & North Star Metrics</div><div class="sk"><div class="skd"></div>Real-time Dashboard Design</div><div class="sk"><div class="skd"></div>Automated Alerting Systems</div></div></div>
+    <div class="sg fu d4"><div class="sgt">Engineering Background</div><div class="skl"><div class="sk"><div class="skd"></div>Full-Stack Development (prev.)</div><div class="sk"><div class="skd"></div>SQL & Data Pipelines</div><div class="sk"><div class="skd"></div>API Integration & Debugging</div><div class="sk"><div class="skd"></div>E-commerce Platform Dev</div><div class="sk"><div class="skd"></div>Financial Dashboard Design</div></div></div>
+  </div>
+  <div class="trow fu">
+    <span class="tc">SQL</span><span class="tc">Python</span><span class="tc">Tableau</span><span class="tc">Power BI</span><span class="tc">Figma</span><span class="tc">Jira</span><span class="tc">Confluence</span><span class="tc">Google Analytics</span><span class="tc">Adobe Analytics</span><span class="tc">Dynatrace</span><span class="tc">Salesforce</span><span class="tc">Advanced Excel</span><span class="tc">Mixpanel</span>
+  </div>
+  <div class="clbar fu">
+    <span class="cltag">Currently Learning</span>
+    <div class="clchips"><span class="clc">AI/ML for PMs</span><span class="clc">dbt</span><span class="clc">Product-led Growth</span><span class="clc">Amplitude</span></div>
+  </div>
+  <!-- <div class="sl" style="margin-top:2.75rem">Certifications</div>
+  <div class="certs fu">
+    <div class="cert"><div class="cico">📋</div><div><div class="cname">Project Management Foundations: Requirements</div><div class="cby">LinkedIn Learning</div></div></div>
+    <div class="cert"><div class="cico">📊</div><div><div class="cname">Data Analytics for Business Professionals</div><div class="cby">LinkedIn Learning</div></div></div>
+    <div class="cert"><div class="cico">💬</div><div><div class="cname">Requirements Elicitation: Stakeholder Conversations</div><div class="cby">LinkedIn Learning</div></div></div>
+    <div class="cert"><div class="cico">🗓️</div><div><div class="cname">Instructional Design Essentials: Models of ID</div><div class="cby">LinkedIn Learning</div></div></div>
+    <div class="cert"><div class="cico">💰</div><div><div class="cname">Accounting Foundations: Cost Estimating</div><div class="cby">LinkedIn Learning</div></div></div>
+    <div class="cert"><div class="cico">🔄</div><div><div class="cname">Agile Project Management (In Progress)</div><div class="cby">Northeastern University</div></div></div>
+  </div> -->
+</section>
+
+<!-- THINKING -->
+<section id="thinking">
+  <div class="sl">Product Thinking</div>
+  <h2 class="sh2 fu">What I think about<br>when I'm <em>not working.</em></h2>
+  <div class="tgrid">
+    <div class="tcard fu d1">
+      <div class="tcn">01</div>
+      <div class="tctag">Essay · Onboarding</div>
+      <div class="tctit">The 90-second window: why most digital onboarding fails before it begins</div>
+      <div class="tcb">The first 90 seconds determine everything. I've watched 60% drop off happen at a single form field. Not because the product was bad, but because users did not understand what they were about to do. Here's what I've learned about the moment users decide to stay or leave.</div>
+      <!-- <div class="tcr">Read more →</div> -->
+      <div class="tcr">Coming Soon →</div>
+    </div>
+    <div class="tcard fu d2">
+      <div class="tcn">02</div>
+      <div class="tctag">Analysis · Digital Banking</div>
+      <div class="tctit">Why the best neobanks removed the word "bank" from their onboarding</div>
+      <div class="tcb">Chime, Revolut, and Mercury all made the same counterintuitive bet: lead with the outcome, not the product. Meanwhile, traditional banks open with compliance. A breakdown of how framing determines trust. Data-backed.</div>
+      <!-- <div class="tcr">Read more →</div> -->
+      <div class="tcr">Coming Soon →</div>
+    </div>
+    <div class="tcard fu d3">
+      <div class="tcn">03</div>
+      <div class="tctag">Framework · Metrics</div>
+      <div class="tctit">What I wish I'd known about North Star metrics before my first sprint review</div>
+      <div class="tcb">Three years in, I've seen teams pick the wrong North Star and optimize into a local maximum. Completion rate sounds right, until you realize you're measuring users who gave up, not users who succeeded. Here's the mental model I now use before agreeing to any metric.</div>
+      <!-- <div class="tcr">Read more →</div> -->
+      <div class="tcr">Coming Soon →</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="cglow"></div>
+  <div class="abadge"><div class="adot"></div>Open to PM · APM · Product Analyst · Available June 2026</div>
+  <h2 class="ch2">Let's build<br>something together.</h2>
+  <p class="csub">Whether it's about a role, a product debate, or just coffee and funnels. I am always up for it.</p>
+  <div class="cbtns">
+    <a href="mailto:borkar.k@northeastern.edu" class="cb cb-a">borkar.k@northeastern.edu</a>
+    <a href="https://www.linkedin.com/in/karishmaborkar" target="_blank" class="cb cb-g">LinkedIn →</a>
+    <a href="tel:+16176027580" class="cb cb-g">+1 617-602-7580</a>
+  </div>
+</section>
+<footer><p>© 2026 Karishma Borkar. Built with intention.</p><a href="#hero">Back to top ↑</a></footer>
+
+<!-- MODAL SHELL -->
+<div class="mo" id="mo" onclick="closeMoOuter(event)"><div class="mbox" id="mbox"></div></div>
+
+<script src="content/cases.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
