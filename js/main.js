@@ -67,6 +67,24 @@ window.addEventListener('scroll',()=>{
   });
 },{ passive:true });
 
+// Mobile menu
+function toggleMobileMenu(){
+  const menu=document.getElementById('mobileMenu');
+  const overlay=document.getElementById('mobileMenuOverlay');
+  const btn=document.getElementById('hamburger');
+  const open=menu.classList.toggle('open');
+  overlay.classList.toggle('open',open);
+  btn.classList.toggle('open',open);
+  document.body.style.overflow=open?'hidden':'';
+}
+function closeMobileMenu(){
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.getElementById('mobileMenuOverlay').classList.remove('open');
+  document.getElementById('hamburger').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMobileMenu();});
+
 // Dark mode toggle
 (function(){
   const btn=document.getElementById('themeToggle');
